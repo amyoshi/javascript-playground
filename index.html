@@ -61,7 +61,7 @@
   <div class="container-2">
     <h2>Pokemon Generator</h2>
     <button class="btn btn-success" id="poke-generator" onclick="generatePoke()">Generate Pokemon</button>
-    <button class="btn btn-danger" onclick="pokeReset()">reset</button>
+    <button class="btn btn-danger" onclick="pokeReset()">Reset</button>
     <div class="flex-box-container-2" id="flex-poke-gen">
     </div>
   </div>
@@ -70,7 +70,8 @@
 <!-- Rock Paper Scissors -->
 <div class="container-3">
 <h2>Rock, Paper, Scissors</h2>
-
+<button class="btn btn-primary" onclick="startRpsGame()">Click me</button>
+<button class="btn btn-danger" onclick="resetRps()">Reset</button>
 <div class="flex-box-rps" id="flex-box-rps-div">
   <img id="rock" src="/images/rock.png" height=150 width=150 alt="rock" onclick="rpsGame(this)">
   <img id="paper" src="/images/paper.png" height=150 width=150 alt="rock" onclick="rpsGame(this)">
