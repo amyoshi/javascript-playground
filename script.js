@@ -32,6 +32,22 @@ function pokeReset() {
   document.getElementById("flex-poke-gen").innerHTML = "";
 }
 
+// hides RPS game
+function hideRpsGame() {
+  let hideRps = document.getElementById("flex-box-rps-div");
+  hideRps.style.display = "none";
+}
+
+hideRpsGame();
+
+// make RPS game appear
+function startRpsGame() {
+  let rpsDiv = document.getElementById("flex-box-rps-div");
+  if (rpsDiv.style.display === "none") {
+    rpsDiv.style.display = "block";
+  }
+}
+
 // Rock, paper, scissors //
 function rpsGame(yourChoice) {
   console.log(yourChoice); // will log selection
@@ -131,5 +147,5 @@ function rpsFrontEnd(humanImageChoice, botImageChoice, finalMessage) {
   document.getElementById("flex-box-rps-div").appendChild(messageDiv);
 }
 
-// create startRpsGame()function to bring up rps game
-// create resetRps() function to reset game
+// create resetRps() function to reset game and counter
+// create a counter that keeps score of human and bot
